@@ -1,0 +1,6 @@
+@APICursoACTI_Web_HostAddress = http://localhost:5277
+
+GET {{APICursoACTI_Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
