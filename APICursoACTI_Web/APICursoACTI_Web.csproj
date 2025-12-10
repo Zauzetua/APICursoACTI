@@ -14,4 +14,9 @@
     <Folder Include="Models\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\APICursoACTI_Application\APICursoACTI_Application.csproj" />
+    <ProjectReference Include="..\APICursoACTI_Infrastructure\APICursoACTI_Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

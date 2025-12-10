@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\" />
+    <ProjectReference Include="..\APICursoACTI_Application\APICursoACTI_Application.csproj" />
   </ItemGroup>
 
 </Project>
