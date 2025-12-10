@@ -36,8 +36,8 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
-app.MapControllers();
 //Proceso de manejo global de excepciones
 app.UseMiddleware<GlobalExceptionMiddleware>();
+app.MapControllers();
+
 app.Run();
