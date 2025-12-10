@@ -19,15 +19,17 @@
         {
             try
             {
+                //Intentamos realizar la siguiente operacion en la cadena de middlewares
                 await _next(context);
             }
             catch (Exception ex)
             {
+                //Si llegara a fallar algo (Servicio, repo, controller, etc), se captura la excepcion aqui.
                 _logger.LogError(ex, ex.Message);
 
+                // Preparamos una respuesta de error estandarizada
                 context.Response.StatusCode = 500;
                 context.Response.ContentType = "application/json";
-
                 var response = new
                 {
                     success = false,

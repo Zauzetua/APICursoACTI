@@ -1,10 +1,5 @@
 ﻿using APICursoACTI_Application.Interfaces.Repositories;
 using APICursoACTI_Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace APICursoACTI_Infrastructure.Repositories
 {
